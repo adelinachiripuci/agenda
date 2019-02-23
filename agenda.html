@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="agenda.css">
+  <script src="agenda.js"></script>
+</head>
+<body>
+  <div id="agenda">Agenda</div>
+  <div id="container">
+    <form id="myForm">
+      <label for="nume">Nume:</label>
+      <input type="text" name="nume" id="nume"  />
+      <label for="telefon">Telefon:</label>
+      <input type="number" name="telefon" id="telefon" onkeypress="enter(event)" />
+      <button type="button" name="button" onclick="add();">ADAUGA CONTACT</button>
+    </form>
+  </div>
+  <div id="tableContainer" class="hidden">
+  <table id="myTable">
+    <thead>
+      <tr id="header">
+        <td>Nume</td>
+        <td>Telefon</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+  </div>
+</body>
+</html>
