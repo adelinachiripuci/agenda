@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #D0BCFE;
+}
+
+#container {
+  width: 50%;
+  background-color: #fff;
+  text-align: left;
+  margin: 5px auto;
+  border-radius: 10px;
+  padding: 20px 50px 10px 250px;
+}
+
+#sort, #form, #title {
+  margin: 20px auto;
+}
+
+#title {
+  margin-bottom: 30px;
+}
+
+td {
+padding-right: 20px;
+}
+
+thead:first-child, #title {
+  font-weight: bold;
+}
+
+#sort > button {
+  background-color: #DE99F7;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+#form > button {
+  padding: 8px;
+  border-width: medium;
+  border-radius: 4px;
+  background-color: #71FD95;
+}
+
+#form > input {
+  height: 34px;
+}
+
+.hidden {
+  display: none;
+}
+
+.markbutton {
+  background-color: #FF9797;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.linethrough {
+  text-decoration: line-through;
+}
