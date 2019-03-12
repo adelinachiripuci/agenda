@@ -1,0 +1,163 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+  color: #E7D5A7;
+  font-size: 18px;
+  text-shadow: 2px 2px 5px black;
+  outline-color: #6d5d52;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width:85%;
+  height:720px;
+  border-left-style:solid;
+  border-right-style:solid;
+  border-width: 2px;
+  border-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(brain.jpeg);
+}
+
+#lista_elevi_wrapper >.myTable {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #E7D5A7;
+  margin-top: 10px;
+
+}
+#lista_elevi_wrapper > .introduce {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #E7D5A7;
+}
+
+#lista_elevi_wrapper >.introduce >input {
+  background-color: #4C392C;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  color:#fff;
+  font-size: 16px;
+}
+#note_elev_wrapper {
+  transition:opacity 1s linear;
+}
+#note_elev_wrapper >.introduce >input {
+  background-color: #4c392c;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  color:#fff;
+  font-size: 16px;
+}
+
+.introduce > label > input {
+  height: 30px;
+  margin-left: 6px;
+}
+
+ #lista_elevi_wrapper > .myTable > .sorteaza:hover {
+  background-color: #98999B;
+  color: black;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+#note_elev_wrapper > .myTable > .sorteaza:hover {
+ background-color: #98999B;
+ color: black;
+ opacity: 0.6;
+ transition: 0.3s;
+ border-radius: 4px;
+}
+
+#lista_elevi_wrapper {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+#note_elev_wrapper {
+  padding-right: 100px;
+  padding-top: 100px;
+}
+
+
+.header {
+  color: #E7D5A7;
+  font-size: 25px;
+}
+.header span{
+  font-size: 25px;
+}
+
+
+#note_elev_wrapper >.myTable {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #4c392c;
+  margin-top: 10px;
+
+}
+
+#note_elev_wrapper > .introduce {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #4c392c;
+}
+#note_elev_wrapper > button {
+  background-color: #4c392c;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 3px;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+
+input {
+  color:#4c392c;
+  text-shadow: none;
+}
+
+ td {
+  padding:  20px;
+}
+
+thead {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#contentGrades, #content {
+  color:#E7D5A7;
+  font-weight: bold;
+}
+
+.buttons {
+  background-color: #4C392C;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  color:#fff;
+  font-size: 16px;
+}

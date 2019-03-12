@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="catalogcss.css">
+  <script src="catalogjs.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+</head>
+<body>
+  <div id="container">
+    <div id="lista_elevi_wrapper">
+      <div class="header">Lista elevi</div>
+      <div class="introduce">
+        <label>Nume:<input type="text" name="name"  onkeypress="enterStudents(event)" placeholder="introdu numele" onfocus="this.placeholder = ''"></label>
+        <input type="button" name="adauga" value="Adauga elev" onclick="addStudent()">
+      </div>
+      <div class="myTable">
+        <div class="sorteaza" onclick="sortAverageAsc()">
+          Sortează ascendent după medie note
+        </div>
+        <div class="sorteaza" onclick="sortAverageDes()">
+          Sortează descendent după medie note
+        </div>
+        <div id="nrElevi">
+          Niciun elev adăugat în acest moment
+        </div>
+
+      </div>
+      <div id="content" class="hidden">
+        <table style="border:1px;">
+          <thead>
+            <tr>
+              <td>Nume</td>
+              <td>Medie note</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="note_elev_wrapper" class="hidden">
+      <button type="button" name="button" onclick="hideGrades()">Ascunde note</button>
+      <div class="header">Note elev: <span></span></div>
+      <div class="introduce">
+        <label>Nota:<input type="text" name="grade"  onkeypress="enterGrade(event)" placeholder="introdu nota" onfocus="this.placeholder = ''"></label>
+        <input type="button"  value="Adauga nota" onclick="addGrade()">
+      </div>
+      <div class="myTable">
+        <div class="sorteaza" onclick="sortGradesAsc()">
+          Sortează ascendent note
+        </div>
+        <div class="sorteaza" onclick="sortGradesDes()">
+          Sortează descendent note
+        </div>
+        <div id="zeronote">
+          Niciun nota adăugata în acest moment
+        </div>
+      </div>
+      <div id="contentGrades">
+        <table style="border:1px;">
+          <thead>
+            <tr>
+              <td></td>
+              <td>Note</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
